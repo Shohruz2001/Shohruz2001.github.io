@@ -1,0 +1,116 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Light Grey */
+    color: #333; /* Dark Grey */
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #333; /* Dark Grey */
+    color: white; /* White */
+    text-align: center;
+    padding: 1.2em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; /* Dark Grey */
+    text-align: center;
+}
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ddd; /* Light Grey */
+            padding: 14px 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+            nav ul li a:hover, nav ul li a:focus {
+                background-color: #444; /* Darker Grey */
+                color: #fff; /* White */
+            }
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: white; /* White */
+    padding: 20px;
+    border-radius: 8px; /* Softer rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.profile-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#experiences .experience, .project {
+    background-color: #fff; /* White */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+    .experience h3, .project h3 {
+        color: #333; /* Dark Grey */
+        margin-bottom: 10px;
+    }
+
+    .experience ul, .project ul {
+        list-style-type: circle; /* Circle list style */
+        padding-left: 20px;
+    }
+
+        .experience ul li, .project ul li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+footer {
+    background-color: #333; /* Dark Grey */
+    padding: 20px;
+    text-align: center;
+    color: white; /* White */
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+        nav ul li a {
+            display: block; /* Full-width nav links for mobile */
+        }
+
+    main {
+        padding: 15px;
+    }
+}
+
+#languages img {
+    height: 20px; /* or whatever size you prefer */
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
