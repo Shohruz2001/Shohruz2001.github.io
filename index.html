@@ -1,10 +1,78 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shohruz Junaidov - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navbar {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        #home {
+            padding: 50px 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        #home h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        #home img {
+            border-radius: 50%;
+            margin: 20px 0;
+            width: 180px;
+            height: auto;
+        }
+        #home p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        .current-year {
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,12 +91,11 @@
     <main>
         <section id="home">
             <h1>Welcome to My Portfolio</h1>
-            <img src="Images/Headshot.jpg" alt="Shohruz Junaidov" style="width: 200px; height: auto;">
+            <img src="Images/Headshot.jpg" alt="Shohruz Junaidov">
             <p>
-                This digital portfolio is a snapshot of my academic endeavors and professional growth.
-                Dive into my world of integrating management principles with technological innovation. 
-                Whether you're a potential collaborator or just curious, I invite you to explore my 
-                experiences and the milestones I've achieved along the way.
+                Welcome to my portfolio! I’m Shohruz Junaidov, a dedicated student specializing in Management Information Systems and Management Information Technology. Here, you’ll find a showcase of my academic journey, technical skills, and professional experiences.
+                <br><br>
+                Whether you are a collaborator, recruiter, or simply curious, feel free to explore and connect as I work toward creating innovative solutions at the intersection of business and technology.
             </p>
         </section>
     </main>
@@ -37,6 +104,8 @@
         <p>© <span class="current-year"></span> Shohruz Junaidov</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        document.querySelector('.current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
