@@ -22,72 +22,52 @@
             list-style-type: none;
             padding: 0;
             margin: 0;
-            display: inline-block;
         }
         .navbar li {
             display: inline;
-            margin-right: 15px;
+            margin: 0 15px;
         }
         .navbar a {
             color: white;
             text-decoration: none;
             padding: 10px 20px;
-            transition: background-color 0.3s ease;
         }
         .navbar a:hover {
             background-color: #555;
             border-radius: 5px;
         }
         main {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            text-align: center;
         }
         #home {
-            padding: 20px;
+            padding: 50px 20px;
             background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            text-align: center;
-            position: relative;
-            width: 100%;
-            max-width: 900px;
         }
         #home h1 {
-            margin-bottom: 20px;
-            font-size: 32px;
+            font-size: 36px;
             color: #333;
         }
         #home img {
-            border-radius: 5px;
-            width: 100%;
-            max-width: 200px;
+            border-radius: 50%;
+            margin: 20px 0;
+            width: 180px;
             height: auto;
-            margin: 10px;
-        }
-        .slide {
-            width: 90%;
-            max-width: 850px;
-            display: none; /* Hide slides by default */
-            margin: auto; /* Center-align slides */
         }
         #home p {
             font-size: 18px;
             color: #555;
             line-height: 1.6;
-            padding: 10px;
         }
         footer {
             text-align: center;
             padding: 10px;
             background-color: #333;
             color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
         .current-year {
             color: #fff;
@@ -111,14 +91,7 @@
     <main>
         <section id="home">
             <h1>Welcome to My Portfolio!</h1>
-            <div id="slider">
-                <img src="Images/AF.jpg" alt="American Fidelity" class="slide">
-                <img src="Images/Google.JPG" alt="Google" class="slide">
-                <img src="Images/Meta.jpg" alt="Meta" class="slide">
-                <img src="Images/MidlandMortgage.jpg" alt="Midland Mortgage" class="slide">
-                <img src="Images/UWCDilijan.jpg" alt="UWC Dilijan" class="slide">
-                <img src="Images/Headshot.jpg" alt="Headshot" class="slide">
-            </div>
+            <img src="Images/Headshot.jpg" alt="Shohruz Junaidov">
             <p>
                 I’m Shohruz Junaidov, a dedicated student specializing in Management Information Systems and Management Information Technology. Here, you’ll find a showcase of my academic journey, technical skills, and professional experiences.
                 <br><br>
@@ -133,19 +106,6 @@
 
     <script>
         document.querySelector('.current-year').textContent = new Date().getFullYear();
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let slides = document.getElementsByClassName("slide");
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) slideIndex = 1;
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 10000); // Change image every 10 seconds
-        }
     </script>
 </body>
 </html>
