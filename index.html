@@ -92,6 +92,13 @@
         <section id="home">
             <h1>Welcome to My Portfolio!</h1>
             <img src="Images/Headshot.jpg" alt="Shohruz Junaidov">
+            <div id="imageSlider">
+                <img src="Images/AF.jpg" alt="American Fidelity" class="slide" style="display: none;">
+                <img src="Images/Google.JPG" alt="Google" class="slide" style="display: none;">
+                <img src="Images/Meta.jpg" alt="Meta" class="slide" style="display: none;">
+                <img src="Images/MidlandMortgage.jpg" alt="Midland Mortgage" class="slide" style="display: none;">
+                <img src="Images/UWCDilijan.jpg" alt="UWC Dilijan" class="slide" style="display: none;">
+            </div>
             <p>
                 I’m Shohruz Junaidov, a dedicated student specializing in Management Information Systems and Management Information Technology. Here, you’ll find a showcase of my academic journey, technical skills, and professional experiences.
                 <br><br>
@@ -106,6 +113,19 @@
 
     <script>
         document.querySelector('.current-year').textContent = new Date().getFullYear();
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 10000); // Change image every 10 seconds
+        }
     </script>
 </body>
 </html>
