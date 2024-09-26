@@ -114,3 +114,8 @@ footer {
     margin-right: 10px;
     vertical-align: middle;
 }
+.midland-photo {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Keeps the aspect ratio intact */
+}
+
