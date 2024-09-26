@@ -5,6 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiences - Shohruz Junaidov</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navbar {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+        }
+        .navbar li {
+            display: inline;
+            margin-right: 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: left;
+        }
+        .experience {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .experience img {
+            width: 200px;
+            height: auto;
+            float: left;
+            margin-right: 20px;
+        }
+        .experience h3 {
+            color: #333;
+            padding-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .current-year {
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,7 +81,7 @@
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="experiences.html" class="active">Experiences</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="languages.html">Languages</a></li>
@@ -25,35 +94,55 @@
             <h2>Experiences</h2>
 
             <div class="experience">
-                <h3>American Fidelity Assurance Company, Oklahoma</h3>
-                <img src="Images/AF.jpeg" alt="American Fidelity Assurance Company" style="width: 200px; height: auto;">
-                <p><strong>Business Operations Intern (Summer 2023 - Present)</strong></p>
+                <img src="Images/MidlandMortgage.jpg" alt="Midland Mortgage">
+                <h3>Midland Mortgage, A Division of MidFirst Bank, OK</h3>
+                <p><strong>Summer Intern - Mortgage Acquisition Department (June 2024 – August 2024)</strong></p>
                 <ul>
-                    <li>Immersed in entrepreneurship and technology.</li>
-                    <li>Participated in STEM Teacher Fellowship program for technology-related projects.</li>
-                    <li>Set up accounts for Oregon State customers using Salesforce, Mocha, and Superflex.</li>
-                    <li>Managed daily AWD and AFES reports for customer billing.</li>
-                    <li>Collaborated with educators to enhance STEM education in schools.</li>
+                    <li>Created an extensive framework utilizing Python, MS Access, and VBA for evaluating loan pools during live bidding processes.</li>
+                    <li>Engaged with data analysis using Bloomberg and YieldBook, evaluating large pools of mortgage-backed securities.</li>
+                    <li>Participated in various teams for automation, reporting, and forecasting tasks.</li>
                 </ul>
             </div>
 
             <div class="experience">
+                <img src="Images/AF.jpeg" alt="American Fidelity Assurance Company">
+                <h3>American Fidelity Assurance Company, Oklahoma</h3>
+                <p><strong>Business Operations Intern (June 2023 – May 2024)</strong></p>
+                <ul>
+                    <li>Enhanced data integrity and validation processes to ensure accuracy across technical outputs.</li>
+                    <li>Participated in STEM Teacher Fellowship program to integrate technology in educational projects.</li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <img src="Images/Deloitte.jpg" alt="Deloitte Consulting">
+                <h3>Deloitte Consulting, Dallas, TX</h3>
+                <p><strong>Apprenticeship Program (February 2024 – April 2024)</strong></p>
+                <ul>
+                    <li>Gained insights into consulting and SAP systems within a competitive apprenticeship environment.</li>
+                    <li>Developed professional skills in business chemistry, resume building, networking, and case studies.</li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <img src="Images/Trads.jpeg" alt="Traditions Square">
                 <h3>Traditions Squares, Norman, OK</h3>
-                <img src="Images/Trads.jpeg" alt="Traditions Square" style="width: 200px; height: auto;">
                 <p><strong>Community Assistant (Spring 2022 - Present)</strong></p>
                 <ul>
-                    <li>Resource for approximately 300 residents for a supportive community environment.</li>
-                    <li>Organized and coordinated community events.</li>
-                    <li>Maintained communication with Student Residence Life and Housing Department.</li>
+                    <li>Act as a resource for approximately 300 residents, fostering a supportive community environment.</li>
+                    <li>Coordinate and manage community events that enhance resident engagement.</li>
                 </ul>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>� <span class="current-year"></span> Shohruz Junaidov</p>
+        <p>© <span class="current-year"></span> Shohruz Junaidov</p>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.querySelector('.current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
