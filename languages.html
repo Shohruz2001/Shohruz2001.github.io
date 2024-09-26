@@ -15,7 +15,7 @@
                 <li><a href="experiences.html">Experiences</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="skills.html">Skills</a></li>
-                <li><a href="languages.html">Languages</a></li>
+                <li><a href="languages.html" class="active">Languages</a></li>
             </ul>
         </nav>
     </header>
@@ -29,7 +29,6 @@
                 <li>English (Proficient) <img src="images/usa-flag.png" alt="USA Flag"></li>
                 <li>Russian (Proficient) <img src="images/russia-flag.png" alt="Russia Flag"></li>
             </ul>
-
         </section>
     </main>
 
@@ -38,5 +37,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.querySelector('.current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
