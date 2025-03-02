@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiences - Shohruz Junaidov</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -23,60 +22,56 @@
 
     <main>
         <section id="experiences">
-            <h1>Professional Experience</h1>
-            <div class="experience-container">
-                
-                <div class="experience-card">
-                    <img src="Images/Midland.jpeg" alt="Midland Mortgage">
-                    <div class="experience-content">
-                        <h3>Midland Mortgage, A Division of MidFirst Bank</h3>
-                        <p><strong>Summer Intern - Mortgage Acquisition (June 2024 – August 2024)</strong></p>
-                        <ul>
-                            <li>Developed Python & VBA framework for loan pool evaluation.</li>
-                            <li>Utilized Bloomberg & YieldBook for MBS data analysis.</li>
-                            <li>Assisted with automation, forecasting & portfolio sensitivity analysis.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="experience-card">
-                    <img src="Images/AF.jpeg" alt="American Fidelity">
-                    <div class="experience-content">
-                        <h3>American Fidelity Assurance Company</h3>
-                        <p><strong>Special Services Intern - Technical Team (June 2023 – May 2024)</strong></p>
-                        <ul>
-                            <li>Enhanced data integrity and validation frameworks.</li>
-                            <li>Assisted client onboarding via Salesforce, Mocha & Superflex.</li>
-                            <li>Collaborated on STEM & technology-focused projects.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="experience-card">
-                    <img src="Images/Deloitte.jpg" alt="Deloitte Consulting">
-                    <div class="experience-content">
-                        <h3>Deloitte Consulting</h3>
-                        <p><strong>Apprenticeship Program (February 2024 – April 2024)</strong></p>
-                        <ul>
-                            <li>Participated in Deloitte’s elite consulting apprenticeship.</li>
-                            <li>Developed case interview skills & professional networking.</li>
-                            <li>Explored SAP systems & business transformation strategies.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="experience-card">
-                    <img src="Images/Trads.jpeg" alt="Traditions Square">
-                    <div class="experience-content">
-                        <h3>Traditions Squares, Norman, OK</h3>
-                        <p><strong>Community Assistant (Spring 2022 - Present)</strong></p>
-                        <ul>
-                            <li>Provide assistance and support for 300+ residents.</li>
-                            <li>Coordinate community events & engagement activities.</li>
-                            <li>Maintain close collaboration with student housing services.</li>
-                        </ul>
-                    </div>
-                </div>
+            <h2>Experiences</h2>
+
+            <div class="experience">
+                 <h3>Midland Mortgage, A Division of MidFirst Bank, Oklahoma City, OK</h3>
+    <img src="Images/Midland.jpeg" alt="Midland Mortgage" class="midland-photo">
+    <p><strong>Summer Intern - Mortgage Acquisition Department (June 2024 – August 2024)</strong></p>
+    <ul>
+        <li>Created an extensive framework utilizing Python, MS Access, and VBA to evaluate loan pools for company live bidding processes.</li>
+        <li>Utilized Bloomberg and YieldBook for data analysis related to mortgage-backed securities (MBS), and evaluated 8 large pools of loans.</li>
+        <li>Rotated into five teams within the department, assisting with various automation, reporting, evaluation, and forecasting tasks.</li>
+        <li>Contributed to group projects, including an OMO presentation and sensitivity analysis on a portfolio of approximately 240,000 loans.</li>
+        <li>Compared external datasets with internal datasets, using Python, VBA, MS Excel, and other tools to align data for decision-making.</li>
+    </ul>
+            </div>
+
+
+            <div class="experience">
+                <h3>American Fidelity Assurance Company, Oklahoma City, OK</h3>
+                <img src="Images/AF.jpeg" alt="American Fidelity Assurance Company" style="width: 200px; height: auto;">
+                <p><strong>Special Services Intern - Technical Team (June 2023 – May 2024)</strong></p>
+                <ul>
+                    <li>Contributed to data integrity and validation projects, focusing on ensuring accuracy and consistency in technical team outputs.</li>
+                    <li>Collaborated with the technical team daily to identify and resolve data discrepancies, utilizing specialized software tools.</li>
+                    <li>Gained hands-on experience in entrepreneurship and technology.</li>
+                    <li>Engaged in the annual STEM teacher Fellowship program to contribute to technology-related projects, working alongside talented peers to solve real business problems.</li>
+                    <li>Assisted in conducting client meetings and creating 112 customer accounts utilizing Salesforce, Mocha, and Superflex software.</li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <h3>Deloitte Consulting, Dallas, TX</h3>
+                <img src="Images/Deloitte.jpg" alt="Deloitte Consulting" style="width: 200px; height: auto;">
+                <p><strong>Apprenticeship Program (February 2024 – April 2024)</strong></p>
+                <ul>
+                    <li>Participated in a prestigious and competitive program, gaining insights into consulting and learning about SAPs.</li>
+                    <li>Engaged with Deloitte consultants to understand skills and experiences sought in candidates.</li>
+                    <li>Built a professional network and acquired case interview techniques through practice.</li>
+                    <li>Attended weekly sessions on business chemistry, resume building, networking, and consulting case studies.</li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <h3>Traditions Squares, Norman, OK</h3>
+                <img src="Images/Trads.jpeg" alt="Traditions Square" style="width: 200px; height: auto;">
+                <p><strong>Community Assistant (Spring 2022 - Present)</strong></p>
+                <ul>
+                    <li>Act as a resource for approximately 300 residents, fostering a supportive community environment.</li>
+                    <li>Organize and coordinated community events to enhance engagement.</li>
+                    <li>Maintain communication with Student Residence Life and Housing Department.</li>
+                </ul>
             </div>
         </section>
     </main>
@@ -86,5 +81,8 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.querySelector('.current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
