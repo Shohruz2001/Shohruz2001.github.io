@@ -49,19 +49,13 @@ nav ul li a:hover, .active {
 }
 
 /* Home Section */
-.home-container {
+.home-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 90vh;
     text-align: center;
-    margin-top: 120px;
-    padding: 50px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .profile-photo {
@@ -76,12 +70,12 @@ nav ul li a:hover, .active {
     transform: scale(1.1);
 }
 
-.profile-section h1 {
+h1 {
     font-size: 2.5rem;
     margin-top: 10px;
 }
 
-.profile-section h2 {
+h2 {
     font-size: 1.3rem;
     opacity: 0.8;
     margin-bottom: 15px;
@@ -120,24 +114,23 @@ nav ul li a:hover, .active {
     background: rgba(255, 255, 255, 0.4);
 }
 
-/* Contact Info */
-.contact-info {
+/* Social Icons */
+.social-links {
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
 }
 
-.contact-info p {
-    margin: 5px 0;
-}
-
-.contact-info a {
+.social-links a {
     color: white;
-    text-decoration: none;
-    transition: color 0.3s;
+    transition: transform 0.3s ease-in-out, color 0.3s;
 }
 
-.contact-info a:hover {
-    color: #ddd;
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #f0f0f0;
 }
 
 /* Footer */
