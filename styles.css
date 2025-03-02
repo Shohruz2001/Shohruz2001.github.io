@@ -1,29 +1,28 @@
-/* General Styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-Screen Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
-/* Full-screen layout */
-main {
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-    padding: 40px;
-}
-
-/* Header and Navigation */
+/* Full-Width Navigation Bar */
 header {
     background-color: #222;
     color: white;
     text-align: center;
     padding: 1.2em 0;
-    position: fixed;
     width: 100%;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -36,7 +35,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #222;
+    width: 100%;
 }
 
 nav ul li {
@@ -51,84 +50,53 @@ nav ul li a {
     transition: all 0.3s ease-in-out;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
+nav ul li a:hover {
     background-color: #444;
     color: white;
     border-radius: 5px;
 }
 
-/* Hero Section */
-#home {
-    margin-top: 100px;
-    text-align: center;
-    background: linear-gradient(to right, #222, #444);
-    color: white;
-    padding: 50px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-#home h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-#home img {
-    width: 180px;
-    height: auto;
-    border-radius: 50%;
-    margin: 20px 0;
-    border: 5px solid white;
-}
-
-#home p {
-    font-size: 18px;
-    line-height: 1.8;
-    max-width: 800px;
+/* Main Content - Full Width */
+main {
+    max-width: 100%;
+    width: 90%;
     margin: auto;
+    padding: 80px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Section Styles */
-section {
+/* About Section */
+#about {
+    width: 100%;
+    text-align: center;
     background: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
 }
 
-section h2 {
-    text-align: center;
-    color: #222;
+#about h2 {
     font-size: 28px;
+    margin-bottom: 20px;
 }
 
-/* Projects & Experiences */
-.project, .experience {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+#about img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.project:hover, .experience:hover {
-    transform: scale(1.02);
-}
-
-.project h3, .experience h3 {
-    color: #222;
-    margin-bottom: 10px;
-}
-
-.project ul, .experience ul {
-    list-style-type: circle;
-    padding-left: 20px;
-}
-
-.project ul li, .experience ul li {
-    margin-bottom: 8px;
+/* Text Block */
+#about p {
+    font-size: 18px;
+    max-width: 100%;
+    text-align: justify;
+    line-height: 1.8;
+    margin: auto;
 }
 
 /* Footer */
@@ -137,10 +105,12 @@ footer {
     padding: 20px;
     text-align: center;
     color: white;
-    margin-top: 40px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
-/* Responsive Design */
+/* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -152,11 +122,11 @@ footer {
     }
 
     main {
-        padding: 20px;
+        width: 95%;
+        padding: 60px 10px;
     }
 
-    #home {
-        padding: 30px;
+    #about p {
+        font-size: 16px;
     }
 }
-
