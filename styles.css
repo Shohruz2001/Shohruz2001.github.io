@@ -1,112 +1,134 @@
-/* General Reset */
-* {
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f4f4f4;
     color: #333;
-    line-height: 1.7;
-    width: 100vw;
-    overflow-x: hidden;
-    text-align: center;
+    line-height: 1.6;
 }
 
-/* Navigation Bar */
+/* Full-screen layout */
+main {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* Header and Navigation */
 header {
     background-color: #222;
     color: white;
+    text-align: center;
     padding: 1.2em 0;
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    background-color: #222;
+}
+
+nav ul li {
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ddd;
-    padding: 10px 15px;
-    transition: all 0.3s;
-    font-size: 1.1rem;
+    padding: 14px 20px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
 }
 
-nav ul li a:hover, .active {
+nav ul li a:hover,
+nav ul li a:focus {
     background-color: #444;
     color: white;
     border-radius: 5px;
 }
 
-/* Main Content */
-main {
-    max-width: 100%;
-    width: 90%;
-    margin: auto;
-    padding: 100px 5% 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Home Section */
-.home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Hero Section */
+#home {
+    margin-top: 100px;
     text-align: center;
-    margin-top: 50px;
+    background: linear-gradient(to right, #222, #444);
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.home-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.home-text p {
-    font-size: 1.2rem;
-    max-width: 600px;
+#home h1 {
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
-/* Profile Image */
-.home-image img {
-    width: 250px;
+#home img {
+    width: 180px;
     height: auto;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 5px solid white;
+}
+
+#home p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Section Styles */
+section {
+    background: white;
+    padding: 30px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+section h2 {
+    text-align: center;
+    color: #222;
+    font-size: 28px;
+}
+
+/* Projects & Experiences */
+.project, .experience {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
 
-.home-image img:hover {
-    transform: scale(1.05);
+.project:hover, .experience:hover {
+    transform: scale(1.02);
 }
 
-/* Buttons */
-.btn {
-    display: inline-block;
-    padding: 12px 20px;
-    background: #007bff;
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background 0.3s;
+.project h3, .experience h3 {
+    color: #222;
+    margin-bottom: 10px;
 }
 
-.btn:hover {
-    background: #0056b3;
+.project ul, .experience ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.project ul li, .experience ul li {
+    margin-bottom: 8px;
 }
 
 /* Footer */
@@ -115,7 +137,6 @@ footer {
     padding: 20px;
     text-align: center;
     color: white;
-    width: 100%;
     margin-top: 40px;
 }
 
@@ -130,11 +151,11 @@ footer {
         margin-bottom: 10px;
     }
 
-    .home-text h1 {
-        font-size: 2rem;
+    main {
+        padding: 20px;
     }
 
-    .home-text p {
-        font-size: 1rem;
+    #home {
+        padding: 30px;
     }
 }
