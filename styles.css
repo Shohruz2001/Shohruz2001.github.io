@@ -362,24 +362,15 @@ p {
     transform: translateY(-5px);
 }
 
-/* Project Card Image */
-.project-card img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
 /* Project Card Content */
 .project-card h3 {
-    font-size: 26px;
+    font-size: 28px;
     color: #003366;
     margin-bottom: 10px;
 }
 
 .project-card p {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: #555;
     margin-bottom: 15px;
@@ -391,9 +382,23 @@ p {
 }
 
 .project-card ul li {
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
     margin-bottom: 8px;
+}
+
+/* Download Links */
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive Design: Switch to single column layout */
