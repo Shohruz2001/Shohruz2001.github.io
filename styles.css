@@ -133,60 +133,70 @@ p {
     color: #e0e0e0;
 }
 
-/* Experience and Project Cards */
-.card-container {
+/* Experiences Page - Card Layout */
+.experiences-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
-    margin-top: 40px;
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.card {
-    display: flex;
+/* Individual Experience Cards */
+.experience-card {
+    flex: 1;
+    min-width: 350px;
+    max-width: 450px;
     background-color: white;
     color: #333;
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 40px;
-    border-radius: 15px;
+    padding: 30px;
+    border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-    transition: 0.3s;
-    align-items: center;
+    text-align: center;
+    transition: transform 0.3s;
 }
 
-.card:hover {
+.experience-card:hover {
     transform: translateY(-5px);
 }
 
-.card-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 12px;
-    object-fit: cover;
-    margin-right: 35px;
+/* Experience Images */
+.experience-card img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
 }
 
-.card-content {
-    text-align: left;
-    max-width: 750px;
-}
-
-.card-content h3 {
-    font-size: 32px;
-    margin-bottom: 12px;
+/* Experience Titles */
+.experience-card h3 {
+    font-size: 26px;
     color: #003366;
+    margin-bottom: 10px;
 }
 
-.card-content ul {
-    padding: 0;
+/* Experience Text */
+.experience-card p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Experience List */
+.experience-card ul {
     list-style: none;
+    padding: 0;
+    text-align: left;
 }
 
-.card-content ul li {
-    font-size: 22px;
-    margin-bottom: 12px;
+.experience-card ul li {
+    font-size: 18px;
+    margin-bottom: 8px;
 }
+
 /* About Page */
 #about {
     display: flex;
