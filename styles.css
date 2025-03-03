@@ -338,6 +338,70 @@ p {
         text-align: center;
     }
 }
+/* Projects Section */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: white;
+    color: #333;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Project Card Image */
+.project-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Project Card Content */
+.project-card h3 {
+    font-size: 26px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-card ul li {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+/* Responsive Design: Switch to single column layout */
+@media (max-width: 992px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* Switch to 1 column */
+    }
+}
 
 /* Languages Page */
 .language-container {
