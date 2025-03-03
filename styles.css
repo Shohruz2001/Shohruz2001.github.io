@@ -136,11 +136,20 @@ p {
 /* Experience Section */
 .experiences-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: auto;
     gap: 40px;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 40px auto;
 }
+
+/* Custom Positioning Based on Image Layout */
+.experience-card:nth-child(1) { grid-column: 2; grid-row: 1; }
+.experience-card:nth-child(2) { grid-column: 3; grid-row: 1; }
+.experience-card:nth-child(3) { grid-column: 1; grid-row: 2; }
+.experience-card:nth-child(4) { grid-column: 2; grid-row: 2; }
+.experience-card:nth-child(5) { grid-column: 3; grid-row: 2; }
+.experience-card:nth-child(6) { grid-column: 2; grid-row: 3; }
 
 /* Experience Cards */
 .experience-card {
@@ -160,7 +169,7 @@ p {
 /* Experience Card Image */
 .experience-card img {
     width: 100%;
-    max-width: 150px;
+    max-width: 180px;
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -195,9 +204,14 @@ p {
 @media (max-width: 992px) {
     .experiences-container {
         grid-template-columns: 1fr; /* Switch to 1 column */
+        grid-template-rows: auto;
+    }
+
+    .experience-card {
+        grid-column: auto;
+        grid-row: auto;
     }
 }
-
 
 /* About Page - Fixed Layout */
 #about {
