@@ -187,48 +187,62 @@ p {
     font-size: 22px;
     margin-bottom: 12px;
 }
-
 /* About Page */
 #about {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: white;
     color: #333;
     width: 90%;
-    max-width: 1300px;
-    margin: 100px auto;
-    padding: 60px;
-    border-radius: 15px;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 50px;
+    border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-    text-align: left;
 }
 
-/* Image */
+/* Move Image to the Left */
 #about img {
     width: 40%;
-    max-width: 420px;
+    max-width: 350px;
     border-radius: 12px;
-    margin-right: 50px;
     object-fit: cover;
+    margin-right: 40px;
 }
 
 /* Text Content */
 .about-content {
     flex: 1;
+    text-align: left;
 }
 
 .about-content h1 {
-    font-size: 48px;
-    margin-bottom: 30px;
+    font-size: 48px; /* Bigger Title */
+    margin-bottom: 25px;
     color: #003366;
 }
 
 .about-content p {
-    font-size: 24px;
+    font-size: 26px; /* Bigger text */
     line-height: 2;
     color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about img {
+        margin: 0 auto 20px auto;
+    }
+
+    .about-content {
+        text-align: center;
+    }
 }
 
 /* Skills Page */
