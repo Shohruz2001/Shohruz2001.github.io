@@ -6,7 +6,7 @@ body {
     background: linear-gradient(to bottom, #007bff, #0056b3);
     color: white;
     text-align: center;
-    font-size: 22px;  /* Bigger font for better readability */
+    font-size: 22px; /* Bigger font for better readability */
 }
 
 /* Navbar */
@@ -30,7 +30,7 @@ body {
 .navbar a {
     color: white;
     text-decoration: none;
-    font-size: 24px;  /* Bigger navbar links */
+    font-size: 24px; /* Bigger navbar links */
     padding: 12px 20px;
     transition: 0.3s;
 }
@@ -47,7 +47,7 @@ main {
 
 /* Section Titles */
 .section-title {
-    font-size: 44px;  /* Bigger for emphasis */
+    font-size: 44px; /* Bigger for emphasis */
     font-weight: bold;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -223,42 +223,66 @@ p {
     color: #555;
 }
 
-/* Skills Page */
-.skills-container {
-    max-width: 1000px;
-    margin: 0 auto;
+/* Project Cards */
+.project-card {
+    background-color: white;
+    color: #333;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 45px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    text-align: left;
 }
 
-.skill-category {
-    margin-bottom: 40px;
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
-.skill-category h2 {
-    font-size: 30px; /* Bigger section headers */
-    margin-bottom: 20px;
-    color: #e0e0e0;
+/* Project Titles */
+.project-card h3 {
+    font-size: 34px; /* Bigger font for project titles */
+    color: #003366;
+    margin-bottom: 18px;
 }
 
-.skill-list {
-    list-style: none;
-    padding: 0;
+/* Project Date */
+.project-card p {
+    font-size: 24px; /* Bigger date font */
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 15px;
 }
 
-.skill-list li {
-    font-size: 24px; /* Bigger text */
-    margin: 8px 0;
+/* Project Description List */
+.project-card ul {
+    padding-left: 20px;
+    font-size: 22px;
+    color: #444;
+    line-height: 1.8;
 }
 
-/* Languages Page */
-.language-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
+/* Skills & Links */
+.project-card p:last-of-type {
+    font-size: 24px;
+    font-weight: bold;
+    color: #003366;
+    margin-top: 15px;
 }
 
-.language-item {
-    font-size: 26px; /* Increased size */
-    margin-bottom: 14px;
+/* Project Links */
+.project-card a {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 24px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
